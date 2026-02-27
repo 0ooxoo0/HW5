@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Задача 1: определение ОС
-        int clientOS = 0; // 0 — iOS, 1 — Android
+        int clientOS = 0;
 
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -10,8 +9,7 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        // Задача 2: ОС + год выпуска
-        clientOS = 1;          // для примера поменяем на Android
+        clientOS = 1; 
         int clientDeviceYear = 2015;
 
         if (clientOS == 0 && clientDeviceYear < 2015) {
@@ -24,7 +22,6 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        // Задача 3: високосный год
         int year = 2024;
 
         if (year > 1584) {
@@ -37,7 +34,6 @@ public class Main {
             System.out.println("Год должен быть больше 1584");
         }
 
-        // Задача 4: срок доставки
         int deliveryDistance = 95;
         int days;
 
@@ -48,7 +44,7 @@ public class Main {
         } else if (deliveryDistance <= 100) {
             days = 3;
         } else {
-            days = -1; // признак невозможности доставки
+            days = -1;
         }
 
         if (days != -1) {
@@ -57,7 +53,6 @@ public class Main {
             System.out.println("Доставка невозможна (свыше 100 км)");
         }
 
-        // Задача 5: сезон по номеру месяца
         int monthNumber = 12;
 
         if (monthNumber >= 1 && monthNumber <= 12) {
